@@ -88,11 +88,38 @@ if (myGender === Gender.Undefined) {
 }
 ```
 
-#### 对象: Object Types
+#### 对象对象: Object Types
 
-#### 任意: any
+#### 接口类型: `interface`
+
+
 
 #### 联合类型: Union Types
+
+
+
+#### never
+
+#### void
+
+#### 任意类型: any
+
+1. 就是 **任意类型** 的意思
+2. 虽然好用，但是尽量不要用。 除非明确知道需要自己在做什么
+3. 编译器将跳过对 `any` 类型的检查
+    + `tsconfig.json` 中打开 `noImplicitAny` 后， `any` 将会提示错误。
+
+```ts
+let obj: any = { x: 0 };
+// None of the following lines of code will throw compiler errors.
+// Using `any` disables all further type checking, and it is assumed 
+// you know the environment better than TypeScript.
+obj.foo();
+obj();
+obj.bar = 100;
+obj = "hello";
+const n: number = obj;
+```
 
 ### type alias
 
@@ -101,6 +128,4 @@ if (myGender === Gender.Undefined) {
 
 
 ## 03. 变量定义: `const` and `let`
-
-## 04. 接口: `interface`
 
