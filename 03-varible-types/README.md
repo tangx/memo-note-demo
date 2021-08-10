@@ -1,36 +1,26 @@
-# varible type
+# 变量类型、定义及操作
 
 > https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
 
-## 01. types
+## 01. 类型定义
 
-### primitives types / simple types
+### 原语类型 primitives types
 
-```ts
-string // 字符串
-number // 数字
-boolean  // 布尔
-```
+最小数据类型
 
 ```ts
-let user: string = "zhangsan"
-let age: number = 18
-let gender: boolean = true
+let user: string = "zhangsan" // 字符串
+let age: number = 18 // 数字
+let gender: boolean = true  // 布尔值
 
 console.log("simple types::: ", gender)
 ```
 
-### complex types
+### 复合类型 compound type
 
-```ts
-array
-tuple
-object
-any
-Union Types
-```
+通过 **原语类型** 组合出来的复合类型
 
-#### 数组: Array
+#### 数组: `Array`
 
 1. Array: 类型固定， 长度不固定
 2. 虽然 `users[3]` 超出边界但是不会提示错误, 其结果为 undeined
@@ -43,7 +33,7 @@ let ages: number[] = [18, 29, 30]
 console.log("array::: ", users[3])
 ```
 
-#### 元组: Tuple
+#### 元组: `Tuple`
 
 1. Tuple: 类型固定， 长度固定。 且必须 **一一对应**
 2. `userInfo[3]` 超出边界时， 编译器将提示错误。
@@ -54,7 +44,7 @@ let userInfo: [string, number, boolean] = ["zhangsan", 10, true]
 console.log("tuple::: ", userInfo[2])
 ```
 
-#### 枚举: enum
+#### 枚举: `Enums`
 
 > 官网: 了解即可 https://www.typescriptlang.org/docs/handbook/enums.html
 
@@ -88,7 +78,7 @@ if (myGender === Gender.Undefined) {
 }
 ```
 
-#### 对象对象: Object Types
+#### 对象对象: `Object Types`
 
 1. 声明类型的时候，有 `=` 号。
 2. 可以使用 `?` 表示为 **可选字段**
@@ -143,6 +133,8 @@ interface Person {
 
 与 `golang` 中的 `interface` 类似， `interface` 是 `object` 的抽象集合。 符合 `interface` 字段的 `object` 实例， 就可以赋值给 `interface` 实例的
 
+[接口与类型别名的差异](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
+
 ```ts
 let p1: Person = stu01
 let p2: Person = teacher01
@@ -153,15 +145,20 @@ console.log("interface::: p2(teacher01) =>", p2)
 
 虽然 `Teacher(object)` 中有 `Salary` 没有 `Age`， 但是由于  `Person(interface)` 中 `Age` 是可选字段， 因此 `Teacher` 就满足 `Person` 的接口抽象。
 
-#### 联合类型: Union Types
+#### 联合类型: `Union Types`
 
 
+### 其他类型
 
-#### never
+#### 任意类型: `any`
 
-#### void
 
-#### 任意类型: any
+非数据类型， 但有特殊含义的类型
+
+#### 不存在类型: `never`
+
+#### 空类型: `void`
+#### `null` / `undefined`
 
 1. 就是 **任意类型** 的意思
 2. 虽然好用，但是尽量不要用。 除非明确知道需要自己在做什么
@@ -180,10 +177,11 @@ obj = "hello";
 const n: number = obj;
 ```
 
+## 02. 类型的行为
+
 ### type alias
 
 ### type assertions
-
 
 
 ## 03. 变量定义: `const` and `let`
