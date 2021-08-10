@@ -24,6 +24,7 @@ console.log("simple types::: ", gender)
 
 1. Array: 类型固定， 长度不固定
 2. 虽然 `users[3]` 超出边界但是不会提示错误, 其结果为 undeined
+3. `Array<string>` 这种方法不建议使用, `tslint` 会提示错误
 
 ```ts
 // declare
