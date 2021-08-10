@@ -203,9 +203,36 @@ const n: number = obj;
 
 ## 02. 类型的行为
 
-### type alias
+### 类型别名: `type alias`
 
-### type assertions
+为一个 **已知类型** 或 **匿名类型** 设置一个 **名字**
+
+1. 使用 type 关键字声明
+2. 使用 = 连接具体类型
+3. 就是取别名， 仅仅是取别名。 同一个类型的不同别名之间可以直接赋值
+
+```ts
+type MyString = string
+type MyUnion = string | number
+type MyInerface = {
+    Salary: number
+}
+type MyObject = {
+    Name: MyString
+    Salary: MyInerface
+}
+
+let myName: MyString = "zhangsan"
+console.log("type alias::: myName =>", myName)
+
+// (伪)不同类型可以赋值
+type MyAnotherString = string
+let myAnotherName = "zhuge"
+myName = myAnotherName
+console.log("type alias::: myName(<- myAnotherName) =>", myName)
+```
+
+### 类型断言 `type assertions`
 
 
 ## 03. 变量定义: `const` and `let`
