@@ -12,5 +12,5 @@ function getAge(name: string): (number) {
     return 26
 }
 
-let hisAge, hisName = getAge(yourName)
+let hisAge = getAge(yourName)
 console.log("type annotation -> call funcion ::: hisAge =>", hisAge)
