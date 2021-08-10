@@ -9,7 +9,7 @@ type Student = {
 
 type Teacher = {
     Name: string
-    Salary?: number
+    Salary: number
 }
 
 // interface
@@ -32,9 +32,11 @@ let stu02: Student = {
 
 console.log("object::: stu01 =>", stu01)
 console.log("object::: stu02 =>", stu02)
+console.log("object::: stu02.Age =>", stu02.Age) // undefined
 
 let teacher01: Teacher = {
-    Name: "zhuge"
+    Name: "zhuge",
+    Salary: 100
 }
 console.log("object::: teacher01 =>", teacher01)
 

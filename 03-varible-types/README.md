@@ -90,9 +90,68 @@ if (myGender === Gender.Undefined) {
 
 #### 对象对象: Object Types
 
+1. 声明类型的时候，有 `=` 号。
+2. 可以使用 `?` 表示为 **可选字段**
+    + 实例化时如果没有赋值， 则默认值为 `undefined`
+
+```ts
+// 注意这里有 = 
+type Student = {
+    Name: string
+    Age?: number // ? 表示可以省略
+}
+
+// usage
+let stu01: Student = {
+    Name: "zhangsan",
+    Age: 18
+}
+let stu02: Student = {
+    Name: "wangwu"
+    // 注意这里: stu02 中 age 未赋值， 默认值为: undefined。
+
+}
+
+console.log("object::: stu01 =>", stu01)
+console.log("object::: stu02 =>", stu02)
+
+```
+
 #### 接口类型: `interface`
 
+> 官方描述: 
+> An interface declaration is another way to name an object type
 
+
+1. 生命接口时， 没有 `=`
+2. 可以使用 `?` 表示为 **可选字段**
+
+```ts
+// 定义对象
+type Teacher = {
+    Name: string
+    Salary: number
+}
+
+// 定义接口
+// 注意没有 = 号
+interface Person {
+    Name: string
+    Age?: number // ? 表示可以省略
+}
+```
+
+与 `golang` 中的 `interface` 类似， `interface` 是 `object` 的抽象集合。 符合 `interface` 字段的 `object` 实例， 就可以赋值给 `interface` 实例的
+
+```ts
+let p1: Person = stu01
+let p2: Person = teacher01
+
+console.log("interface::: p1(stu01) =>", p1)
+console.log("interface::: p2(teacher01) =>", p2)
+```
+
+虽然 `Teacher(object)` 中有 `Salary` 没有 `Age`， 但是由于  `Person(interface)` 中 `Age` 是可选字段， 因此 `Teacher` 就满足 `Person` 的接口抽象。
 
 #### 联合类型: Union Types
 
