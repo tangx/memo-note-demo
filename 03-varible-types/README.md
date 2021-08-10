@@ -147,6 +147,30 @@ console.log("interface::: p2(teacher01) =>", p2)
 
 #### 联合类型: `Union Types`
 
+1. 联合类型， 使用 `|` 联合一个或多个类型
+2. **仅能** 使用 **所有类型** 都具有的方法。 **类型收窄(`narrowing`)**
+3. 可以使用 `typeof` 进行类型判断 `if (typeof id === "string") { ... }`
+
+> [使用联合类型注意事项](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#working-with-union-types)
+
+```ts
+// Teacher 之前定义的 object
+// Person: 之前定义的 interface
+type UnionType = string | number | null | Teacher | Person
+
+let utString: UnionType = "zhangsan"
+let utNumber: UnionType = 18
+let utNull: UnionType = null
+let utTeacher: UnionType = { Name: "zhangsan", Salary: 10 }
+let utPerson: UnionType = { Name: "wangwu" } // interface
+
+console.log("union-type::: utString =>", utString)
+console.log("union-type::: utNull =>", utNull)
+console.log("union-type::: utPerson =>", utPerson)
+console.log("union-type::: utTeacher =>", utTeacher)
+```
+
+
 
 ### 其他类型
 
