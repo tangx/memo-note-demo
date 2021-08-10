@@ -268,3 +268,27 @@ let str1 = num as string // 错误
 
 ### 类型注释 `type annotation`
 
+> https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-annotations-on-variables
+
+1. 使用 `var: type` 对变量进行注解
+2. 函数声明
+    1. 传参部分 **定义方式相同**
+    2. 返回结果 **直接定义类型** 。
+
+```ts
+// 类型注解
+
+// 变量声明
+let yourName: string = "zhangsan"
+const yourAge: number = 100
+
+
+// 函数
+function getAge(name: string): (number) {
+    console.log("type annotation -> funcion::: name =>", name)
+    return 26
+}
+
+let hisAge, hisName = getAge(yourName)
+console.log("type annotation -> call funcion ::: hisAge =>", hisAge)
+```
