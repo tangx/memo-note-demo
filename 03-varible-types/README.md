@@ -16,6 +16,8 @@ boolean  // 布尔
 let user: string = "zhangsan"
 let age: number = 18
 let gender: boolean = true
+
+console.log("simple types::: ", gender)
 ```
 
 ### complex types
@@ -30,12 +32,27 @@ Union Types
 
 #### 数组: Array
 
+1. Array: 类型固定， 长度不固定
+2. 虽然 `users[3]` 超出边界但是不会提示错误, 其结果为 undeined
+
 ```ts
-let names: Array<string> = ["zhangsan", "lisi", "wangwu"]
+// declare
+let users: Array<string> = ["zhangsan", "lisi", "wangwu"]
 let ages: number[] = [18, 29, 30]
+// usage
+console.log("array::: ", users[3])
 ```
 
 #### 元组: Tuple
+
+1. Tuple: 类型固定， 长度固定。 且必须 **一一对应**
+2. `userInfo[3]` 超出边界时， 编译器将提示错误。
+
+```ts
+let userInfo: [string, number, boolean] = ["zhangsan", 10, true]
+// usage
+console.log("tuple::: ", userInfo[2])
+```
 
 #### 枚举: enum
 
