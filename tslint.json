@@ -1,0 +1,12 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        // 忽略 console.log not allow 的检查
+        "no-console": false
+    },
+    "rulesDirectory": []
+}

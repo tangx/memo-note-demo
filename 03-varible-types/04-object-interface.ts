@@ -1,7 +1,7 @@
 // differences-between-type-aliases-and-interfaces
 // https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces
 // object
-// 注意这里有 = 
+// 注意这里有 `=`
 type Student = {
     Name: string
     Age?: number // ? 表示可以省略

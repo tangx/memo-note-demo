@@ -1,7 +1,6 @@
 
 // complex types
 
-
 // 03. 枚举 Enums.
 // 官网: 了解即可， 不一定非要掌握
 // https://www.typescriptlang.org/docs/handbook/enums.html
@@ -11,8 +10,8 @@
 // 3. 下一个为申明值的字段 +1 : Unknown
 // 4. 枚举值类型可以不一致, 但不要这样做。 : Undefined
 enum Gender {
-    Male, // 0 
-    Female = 10, //10
+    Male, // 0
+    Female = 10, // 10
     Unknown, // 11
     Undefined = "undefined", // undefined
 }

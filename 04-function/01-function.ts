@@ -35,7 +35,7 @@ func2("跳过可选参数: guanyu, undefined, false", "guanyu", undefined, false
 // 可变长参数
 // 形参名称前面使用 `...`, 类型使用 array
 function func3(sum: number, ...nums: number[]): void {
-    for (let num of nums) {
+    for (const num of nums) {
         sum += num
     }
     console.log("function::: func3 ===> sum", sum)

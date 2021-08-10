@@ -1,4 +1,5 @@
 // 01. Array: 类型固定， 长度不固定
+// tslint: Array type using 'Array<T>' is forbidden. Use 'T[]' instead.
 let users: Array<string> = ["zhangsan", "lisi", "wangwu"]
 let ages: number[] = [18, 29, 30]
 // usage
