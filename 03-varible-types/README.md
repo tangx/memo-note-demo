@@ -234,6 +234,37 @@ console.log("type alias::: myName(<- myAnotherName) =>", myName)
 
 ### 类型断言 `type assertions`
 
+**类型断言** 是将一个类型 转换 成另一个类型。
 
-## 03. 变量定义: `const` and `let`
+1. **`可以`** 将 **模糊类型** 转换为 **精确类型** : `any -> number`
+2. **`可以`** 将 **精确类型** 转换为 **模糊类型** : `number -> any`
+3. **`不可以`** 将 **精确类型** 转为为 **精确类型** : `number -> string`
+    + 编译器会提示错误， 但 **依旧会** 正常编译
+
+```ts
+// 类型断言
+
+// 模糊转精确, 字面类型一致
+// any -> number
+let a: any = 100
+let a1 = a as number
+console.log("type assertion::: a1 =>", a1)
+
+// 模糊转精确， 字面类型不一致
+// any -> number
+let s: any = "zhangsan"
+let s1 = a as number
+console.log("type assertion::: s1 =>", s1)
+
+// 精确转模糊
+// number -> any
+// s1 是 number
+let s2 = s1 as any
+
+// 精确转精确
+let num: number = 100
+let str1 = num as string // 错误
+```
+
+### 类型注释 `type annotation`
 
