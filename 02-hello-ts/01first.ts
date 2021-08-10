@@ -1,2 +1,2 @@
-let heroName:string = 'zhangsan';
+let heroName: string = 'zhangsan';
 alert(heroName);
