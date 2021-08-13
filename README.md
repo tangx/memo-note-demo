@@ -9,4 +9,7 @@
 + [03 varible-types](./03-varible-types/README.md)
 + [04 function](./04-function/README.md)
 + [05 class and interface](./05-class/)
-+ [06 workflow](./workflow)
++ 06 workflow
+    [for](./06-workflow/README.for.md)
+    [if](./06-workflow/README.if.md)
+
