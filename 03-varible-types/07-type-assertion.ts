@@ -19,4 +19,4 @@ let s2 = s1 as any
 
 // 精确转精确
 let num: number = 100
-let str1 = num as string // 错误
+// let str1 = num as string // 错误

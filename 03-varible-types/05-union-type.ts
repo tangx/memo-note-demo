@@ -7,9 +7,9 @@ let utString: UnionType = "zhangsan"
 let utNumber: UnionType = 18
 let utNull: UnionType = null
 let utTeacher: UnionType = { Name: "zhangsan", Salary: 10 }
-let utPerson: UnionType = { Name: "wangwu" } // interface
+// let utPerson: UnionType = { Name: "wangwu" } // interface
 
 console.log("union-type::: utString =>", utString)
 console.log("union-type::: utNull =>", utNull)
-console.log("union-type::: utPerson =>", utPerson)
+// console.log("union-type::: utPerson =>", utPerson)
 console.log("union-type::: utTeacher =>", utTeacher)

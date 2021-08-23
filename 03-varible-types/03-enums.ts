@@ -27,9 +27,9 @@ let myGender: Gender = Gender.Male
 if (myGender === Gender.Male) {
     console.log("enums::: hey man", myGender)
 }
-// 虽然值类型不一样，但是可以比较， 因为他们都是 Enums 的元素。
-if (myGender === Gender.Undefined) {
-    console.log("enums::: gender check true")
-} else {
-    console.log("enums::: gender check failed")
-}
+// // 虽然值类型不一样，但是可以比较， 因为他们都是 Enums 的元素。
+// if (myGender === Gender.Undefined) {
+//     console.log("enums::: gender check true")
+// } else {
+//     console.log("enums::: gender check failed")
+// }

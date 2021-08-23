@@ -40,8 +40,8 @@ let teacher01: Teacher = {
 }
 console.log("object::: teacher01 =>", teacher01)
 
-let p1: Person = stu01
-let p2: Person = teacher01
+// let p1: Person = stu01
+// let p2: Person = teacher01
 
-console.log("interface::: p1(stu01) =>", p1)
-console.log("interface::: p2(teacher01) =>", p2)
+// console.log("interface::: p1(stu01) =>", p1)
+// console.log("interface::: p2(teacher01) =>", p2)

@@ -25,14 +25,14 @@ if (!isFalse) {
 if (num11 == Num11) {
     console.log("if::: 值比较::: num11 == Num11 => true (值相同, 类型也相同)")
 }
-if (num11 == str11) {
-    console.log("if::: 值比较::: num11 == str11 => true (值相同, 类型不同)")
-}
-if (num11 === str11) {
-    console.log("if::: 值比较::: num11 === str11")
-} else {
-    console.log("if::: 值比较::: num11 === str11 => false (类型不同)")
-}
+// if (num11 == str11) {
+//     console.log("if::: 值比较::: num11 == str11 => true (值相同, 类型不同)")
+// }
+// if (num11 === str11) {
+//     console.log("if::: 值比较::: num11 === str11")
+// } else {
+//     console.log("if::: 值比较::: num11 === str11 => false (类型不同)")
+// }
 
 // iterial condition 字面量
 if (num11) {
