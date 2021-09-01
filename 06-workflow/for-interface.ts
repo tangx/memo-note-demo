@@ -44,6 +44,8 @@ function getMeta() {
 
     if (content) {
         const pairs = content.split(',')
+        console.log("pairs=>", pairs);
+
 
         for (const pair of pairs) {
             const parts = pair.split('=')
