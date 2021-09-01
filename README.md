@@ -12,5 +12,6 @@
 + 06 workflow
     [for](./06-workflow/README.for.md)
     [if](./06-workflow/README.if.md)
+    `for-interface` for 循环 interface 并断言 key 类型
 
 + [99 时间操作](./99-time-operation/)
