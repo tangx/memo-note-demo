@@ -9,5 +9,6 @@
 
 + [1. `typeof` 获取对象类型](./03-narrowing/src/01-typeof-type-guards/)
 + [2. `真值判断` 类型收缩](./03-narrowing/src/02-truthiness-narrowing/)
-+ [6. `赋值推断` 类型收缩](./03-narrowing/src/04-assignment-narrowing/)
++ [3. `等值判断` 类型收缩](./03-narrowing/src/03-equality-narrowing/)
++ [6. `赋值推断` 类型收缩](./03-narrowing/src/06-assignment-narrowing/)
 
