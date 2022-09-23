@@ -8,7 +8,8 @@
 ## 3. 类型边界收缩
 
 + [1. `typeof` 获取对象类型](./03-narrowing/src/01-typeof-type-guards/)
-+ [2. `真值判断` 类型收缩](./03-narrowing/src/02-truthiness-narrowing/)
-+ [3. `等值判断` 类型收缩](./03-narrowing/src/03-equality-narrowing/)
-+ [6. `赋值推断` 类型收缩](./03-narrowing/src/06-assignment-narrowing/)
++ [2. `真值判断` 收缩](./03-narrowing/src/02-truthiness-narrowing/)
++ [3. `等值判断` 收缩](./03-narrowing/src/03-equality-narrowing/)
++ [4. `in 操作符` 收缩](./03-narrowing/src/04-the-in-operator-narrowing/)
++ [6. `赋值推断` 收缩](./03-narrowing/src/06-assignment-narrowing/)
 
