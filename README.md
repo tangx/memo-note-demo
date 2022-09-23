@@ -11,5 +11,6 @@
 + [2. `真值判断` 收缩](./03-narrowing/src/02-truthiness-narrowing/)
 + [3. `等值判断` 收缩](./03-narrowing/src/03-equality-narrowing/)
 + [4. `in 操作符` 收缩](./03-narrowing/src/04-the-in-operator-narrowing/)
++ [5. `instanceof` 类实例检查](./03-narrowing/src/05-instanceof-narrowing/)
 + [6. `赋值推断` 收缩](./03-narrowing/src/06-assignment-narrowing/)
 
