@@ -1,4 +1,4 @@
-# 类型守卫
+# `typeof` 类型守卫
 
 
 ```ts
@@ -18,8 +18,7 @@ console.log(strs, "typeof ==", typeof strs);
 ```
 
 
-
-## demo
+## code
 
 ```ts
 function printAll(strs: string | string[] | null) {
