@@ -1,17 +1,6 @@
 
 export { };
-// interface Shape {
-//   kind: 'circle' | 'square'
-//   radius?: number
-//   sideLength?: number
-// }
 
-// function getArea(shape: Shape) {
-//   if (shape.kind === "circle") {
-//     // Object is possibly 'undefined'.ts(2532)
-//     return shape.radius ** 2 ** Math.PI
-//   }
-// }
 
 
 interface Circle {
@@ -24,8 +13,11 @@ interface Square {
   sideLength: number
 }
 
+interface Triangle {
+  kind: 'triangle'
+}
 
-type Shape = Circle | Square;
+type Shape = Circle | Square | Triangle;
 
 function getArea(shape: Shape) {
   switch (shape.kind) {
@@ -35,6 +27,9 @@ function getArea(shape: Shape) {
     case "square":
       // share: Square
       return shape.sideLength ** 2;
+    default: // 穷尽性检查
+      const _exhaustiveCheck: never = shape;
+      return _exhaustiveCheck;
   }
 }
 
