@@ -14,3 +14,4 @@
 + [5. `instanceof` 类实例检查收缩](./03-narrowing/src/05-instanceof-narrowing/)
 + [6. `赋值推断` 收缩](./03-narrowing/src/06-assignment/)
 + [7. `控制流分析`](./03-narrowing/src//07-control-flow-analysis/)
++ [8. 使用 `类型谓语`](./03-narrowing/src/08-using-type-predicates/)
