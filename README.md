@@ -15,3 +15,4 @@
 + [6. `赋值推断` 收缩](./03-narrowing/src/06-assignment/)
 + [7. `控制流分析`](./03-narrowing/src//07-control-flow-analysis/)
 + [8. 使用 `类型谓语`](./03-narrowing/src/08-using-type-predicates/)
++ [9. 具有`可识别性`的联合类型](./03-narrowing/src/09-discriminated-unions/)
