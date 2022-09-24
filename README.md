@@ -12,5 +12,5 @@
 + [3. `等值判断` 收缩](./03-narrowing/src/03-equality-narrowing/)
 + [4. `in 操作符` 收缩](./03-narrowing/src/04-the-in-operator-narrowing/)
 + [5. `instanceof` 类实例检查收缩](./03-narrowing/src/05-instanceof-narrowing/)
-+ [6. `赋值推断` 收缩](./03-narrowing/src/06-assignment-narrowing/)
-
++ [6. `赋值推断` 收缩](./03-narrowing/src/06-assignment/)
++ [7. `控制流分析`](./03-narrowing/src//07-control-flow-analysis/)
