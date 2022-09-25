@@ -17,3 +17,7 @@
 + [8. 使用 `类型谓语`](./03-narrowing/src/08-using-type-predicates/)
 + [9. 具有`可识别性`的联合类型](./03-narrowing/src/09-discriminated-unions/)
 + [10. `never` 和 `穷尽性检查`](./03-narrowing/src/10-never-and-exhaustiveness-checking/)
+
+## 4. 函数的更多知识点
+
++ [1. 函数表达式](./04-more-on-functions/src/01-function-type-expressions/)
