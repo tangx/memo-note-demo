@@ -27,3 +27,4 @@
 + [5. 泛型函数-限制条件](./04-more-on-functions/src/05-generics-functions-constraints/)
 + [6. 泛型函数-使用限制条件的常见错误](./04-more-on-functions/src/06-generics-functions-working-with-constrained-values/)
 + [7. 泛型函数-指定泛型参数的类型](./04-more-on-functions/src/07-generics-functions-specifying-type-arguments/)
++ [8. 泛型函数-实践指导](./04-more-on-functions/src/08-generics-functions-guidelines-for-writing-good/)
