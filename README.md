@@ -25,3 +25,4 @@
 + [3. 构造器签名](./04-more-on-functions/src/03-construct-signatures/)
 + [4. 泛型函数-类型推断](./04-more-on-functions/src/04-generics-functions-inference/)
 + [5. 泛型函数-限制条件](./04-more-on-functions/src/05-generics-functions-constraints/)
++ [6. 泛型函数-使用限制条件的常见错误](./04-more-on-functions/src/06-generics-functions-working-with-constrained-values/)
